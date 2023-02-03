@@ -25,3 +25,14 @@ awsservices += ['VPC', 'WAF', 'X-Ray']
 # Print the list and the length of the list
 print("List of services:", awsservices)
 print("Lenght of the list:", (len(awsservices)))
+
+# Remove two specific services from the list by name or by index.
+awsservices.remove('ECS')
+del awsservices[4]
+
+# Remove the last item from the list
+del awsservices[-1]
+
+# Print the new list and the new length of the list
+print("New list of services:", awsservices)
+print("Lenght of the new list:", (len(awsservices)))
