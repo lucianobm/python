@@ -17,6 +17,10 @@ awsservices = []
 # Populate the list using append or insert
 awsservices.append('DynamoDB')
 awsservices.append('EC2')
+awsservices.extend(['ECS', 'EKS', 'Lambda', 'RDS', 'S3'])
+awsservices.insert(0, 'Cloud9')
+awsservices.insert(1, 'CloudWatch')
+awsservices += ['VPC', 'WAF', 'X-Ray']
 
 # Print the list and the length of the list
 print("List of services:", awsservices)
