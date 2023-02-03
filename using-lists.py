@@ -25,7 +25,8 @@ users.insert(1, 'melody')
 
 assert users == ['kevin', 'melody', 'alice'], f"Expected `users` to be ['kevin', 'melody', 'alice'] but got: {repr(users)}"
 
-# 6) Add the userts 'andy', 'wanda', and 'jim' to the users list using a single command
+# 6) Add the users 'andy', 'wanda', and 'jim' to the users list using a single command
+users += ['andy', 'wanda', 'jim']
 
 assert users == ['kevin', 'melody', 'alice', 'andy', 'wanda', 'jim'], f"Expected `users`to be ['kevin', 'melody', 'alice', 'andy', 'wanda', 'jim'] but got {repr(users)}"
 
