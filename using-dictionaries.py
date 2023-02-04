@@ -33,6 +33,7 @@ assert emails == {
 }, f"Expected `emails` to be {{'ashley': 'ashley@example.com', 'elizabeth': 'elizabeth@example.com', 'dalton': 'dalton@example.com'}} but got: {repr(emails)}"
 
 # 5) Return a list of keys from the emails dictionary as `users`
+users = list(emails.keys())
 
 assert users == [
     "ashley",
@@ -41,6 +42,7 @@ assert users == [
 ], f"Expected `users` to be ['ashley', 'elizabeth', 'dalton'] but got: {repr(users)}"
 
 # 6) Return a list of values from the emails dictionary as `email_list`
+email_list = list(emails.values())
 
 assert email_list == [
     "ashley@example.com",
