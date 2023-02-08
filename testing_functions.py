@@ -20,6 +20,7 @@ assert split_name("Victor Von Doom") == {
 
 # 3) Write an `is_palindrome` function to check if a string is a palindrome (reads the same from left-to-right and right-to-left)
 def is_palindrome(item):
+    item = str(item)
     return item == item[::-1]
 
 assert is_palindrome("radar") == True, f"Expected True but got {is_palindrome('radar')}"
