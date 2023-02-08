@@ -19,7 +19,8 @@ assert split_name("Victor Von Doom") == {
 }, f"Expected {{'first_name': 'Victor', 'last_name': 'Von Doom'}} but received {split_name('Victor Von Doom')}"
 
 # 3) Write an `is_palindrome` function to check if a string is a palindrome (reads the same from left-to-right and right-to-left)
-
+def is_palindrome(item):
+    return item == item[::-1]
 
 assert is_palindrome("radar") == True, f"Expected True but got {is_palindrome('radar')}"
 assert is_palindrome("stop") == False, f"Expected False but got {is_palindrome('stop')}"
